@@ -1,11 +1,12 @@
 @charset "UTF-8";
-body, html {
+html,
+body {
   height: 100%;
 }
 
 body {
-  background-color: #393a3c;
-  font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+  background-color: #393A3C;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 14px;
   color: #000;
   margin: 0;
@@ -23,7 +24,7 @@ body {
 .header-bk {
   position: absolute;
   top: 0;
-  background-color: #b23227;
+  background-color: #B23227;
   height: 25%;
   width: 100%;
 }
@@ -235,7 +236,7 @@ body {
 
 .menu__line--foundation {
   position: absolute;
-  border: solid 1.5px #edcc36;
+  border: solid 1.5px #EDCC36;
   background-color: #fffffe;
   right: -1.6em;
   bottom: -1.8em;
@@ -254,16 +255,16 @@ body {
 }
 
 .menu__line--center p {
-  font-family: 'Bodoni Moda',serif;
-  font-weight: 700;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
   margin-bottom: 60px;
-  font-size: 1rem;
+  font-size: 1.0rem;
 }
 
 .menu__line--bottom {
   background: #33272a;
   left: 17px;
-  bottom: 0;
+  bottom: 0px;
   z-index: 1200;
   width: 100%;
 }
@@ -314,15 +315,15 @@ body {
 
 .gnav__wrap {
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   height: 100%;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   position: absolute;
   width: 100%;
 }
@@ -344,7 +345,7 @@ body {
   text-decoration: none;
   -webkit-transition: .5s;
   transition: .5s;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
 }
 
 .gnav__menu__item a {
@@ -355,23 +356,23 @@ body {
   text-decoration: none;
   -webkit-transition: .5s;
   transition: .5s;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
 }
 
-.gnav-sub__menu__item a:hover, .gnav__menu__item a:hover {
-  color: #edcc36;
+.gnav__menu__item a:hover, .gnav-sub__menu__item a:hover {
+  color: #EDCC36;
 }
 
 .btn {
   background-color: #fffffe;
-  color: #edcc36;
+  color: #EDCC36;
   border: none;
   padding: 10px 20px;
   font-size: 1.7rem;
   font-weight: 600;
   cursor: pointer;
   border-radius: 10%;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   margin-top: 100px;
 }
 
@@ -390,16 +391,19 @@ body {
 
 #nav li a {
   text-decoration: none;
-  color: #edcc36;
+  color: #EDCC36;
 }
 
-.btn.slide-bg1, .btn.slide-bg2, .btn.slide-bg3, .btn.slide-bg4, .btn.slide-bg5, .btn.slide-bg6 {
+.btn.slide-bg1, .btn.slide-bg2, .btn.slide-bg3, .btn.slide-bg4,
+.btn.slide-bg5, .btn.slide-bg6 {
   position: relative;
   overflow: hidden;
   z-index: 1;
 }
 
-.btn.slide-bg1 span, .btn.slide-bg2 span, .btn.slide-bg3 span, .btn.slide-bg4 span, .btn.slide-bg5 span, .btn.slide-bg6 span {
+.btn.slide-bg1 span, .btn.slide-bg2 span,
+.btn.slide-bg3 span, .btn.slide-bg4 span,
+.btn.slide-bg5 span, .btn.slide-bg6 span {
   display: inline-block;
   width: 100%;
   height: 100%;
@@ -408,18 +412,18 @@ body {
   top: 0;
   left: 0;
   -webkit-transform: translateX(-100%);
-  transform: translateX(-100%);
-  -webkit-transition: -webkit-transform .3s;
-  transition: -webkit-transform .3s;
-  transition: transform .3s;
-  transition: transform .3s, -webkit-transform .3s;
-  transition: transform .3s,-webkit-transform .3s;
+          transform: translateX(-100%);
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
   z-index: -1;
 }
 
-.btn.slide-bg1:hover span, .btn.slide-bg2:hover span, .btn.slide-bg3:hover span, .btn.slide-bg4:hover span, .btn.slide-bg5:hover span, .btn.slide-bg6:hover span {
+.btn.slide-bg1:hover span, .btn.slide-bg2:hover span, .btn.slide-bg3:hover span,
+.btn.slide-bg4:hover span, .btn.slide-bg5:hover span, .btn.slide-bg6:hover span {
   -webkit-transform: none;
-  transform: none;
+          transform: none;
 }
 
 .swiper-container {
@@ -440,18 +444,18 @@ body {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .swiper-slide img {
   width: 100%;
 }
 
-.swiper-button-next:after, .swiper-button-prev:after {
+.swiper-button-prev:after, .swiper-button-next:after {
   display: none;
 }
 
@@ -472,15 +476,15 @@ body {
 }
 
 :root {
-  --swiper-theme-color:#B23227;
+  --swiper-theme-color: #B23227;
 }
 
 .news-box {
-  background-color: #393a3c;
+  background-color: #393A3C;
   height: 500px;
   max-width: 1100px;
   margin: 10px auto;
-  border: 1px solid #e9b851;
+  border: 1px solid #E9B851;
   margin-top: 200px;
 }
 
@@ -488,9 +492,9 @@ body {
   margin: 0 auto;
   max-width: 70%;
   font-size: 80px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   padding-top: 20px;
 }
 
@@ -498,9 +502,9 @@ body {
   margin: 0 auto;
   max-width: 70%;
   font-size: 30px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   margin-top: -50px;
 }
 
@@ -511,7 +515,7 @@ body {
 .notice ul li {
   padding: 3px;
   font-size: 18px;
-  font-family: '游明朝','Yu Mincho';
+  font-family: '游明朝' ,'Yu Mincho';
 }
 
 .notice ul li:hover {
@@ -557,7 +561,7 @@ body {
 }
 
 .content p {
-  font-family: "游明朝","Yu Mincho";
+  font-family: "游明朝", "Yu Mincho";
 }
 
 input {
@@ -578,26 +582,26 @@ button a {
 
 label {
   display: block;
-  margin-bottom: .3em;
-  font-family: "游明朝","Yu Mincho";
+  margin-bottom: 0.3em;
+  font-family: "游明朝", "Yu Mincho";
 }
 
 .required {
-  margin-left: .3em;
+  margin-left: 0.3em;
   color: #f33;
-  font-size: .6em;
+  font-size: 0.6em;
   padding: 2px;
   background-color: #fee;
-  font-weight: 700;
+  font-weight: bold;
 }
 
 .item-title p {
   margin: 0 auto;
   max-width: 70%;
   font-size: 80px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   padding-top: 20px;
   margin-top: 200px;
 }
@@ -606,9 +610,9 @@ label {
   margin: 0 auto;
   max-width: 70%;
   font-size: 30px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   margin-top: -50px;
 }
 
@@ -628,9 +632,9 @@ label {
   display: grid;
   gap: 30px;
   -ms-grid-columns: 1fr 1fr 1fr;
-  grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
   -ms-grid-rows: 300px 300px;
-  grid-template-rows: 300px 300px;
+      grid-template-rows: 300px 300px;
 }
 
 .item-img {
@@ -638,11 +642,12 @@ label {
   height: 100%;
 }
 
-.item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
+.item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask
+, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
   font-size: 2rem;
   opacity: 1;
-  -webkit-transition: all .6s ease;
-  transition: all .6s ease;
+  -webkit-transition: all 0.6s ease;
+  transition: all 0.6s ease;
   text-align: center;
   display: block;
   padding-top: 200px;
@@ -673,11 +678,11 @@ figcaption.hover-mask {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   text-align: center;
   padding-bottom: 30px;
-  font-family: '游明朝','Yu Mincho';
+  font-family: '游明朝' ,'Yu Mincho';
 }
 
 .Shop-box {
@@ -688,9 +693,9 @@ figcaption.hover-mask {
   margin: 0 auto;
   max-width: 70%;
   font-size: 80px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   margin-top: 200px;
 }
 
@@ -698,9 +703,9 @@ figcaption.hover-mask {
   margin: 0 auto;
   max-width: 70%;
   font-size: 30px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
 }
 
 .Shop-content {
@@ -720,8 +725,8 @@ figcaption.hover-mask {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .Shop-Item-img img {
@@ -738,25 +743,25 @@ figcaption.hover-mask {
   width: 270px;
   height: 80px;
   border-radius: 5px;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   font-weight: 500;
-  background: 0 0;
+  background: transparent;
   cursor: pointer;
-  -webkit-transition: all .3s ease;
-  transition: all .3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
   position: relative;
   display: inline-block;
-  -webkit-box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-  outline: 0;
+  -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+  outline: none;
   font-size: 25px;
   color: #090909;
 }
 
 .Shop-btn-1, .Shop-btn-2 {
   background: #fafafa;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fafafa), to(#8b8b8b));
-  background: linear-gradient(0deg, #fafafa 0, #8b8b8b 100%);
+  background: -webkit-gradient(linear, left bottom, left top, from(#fafafa), to(#8b8b8b));
+  background: linear-gradient(0deg, #fafafa 0%, #8b8b8b 100%);
   border: none;
   -webkit-transition: 1s;
   transition: 1s;
@@ -764,54 +769,54 @@ figcaption.hover-mask {
 
 .Shop-btn-1:hover, .Shop-btn-2:hover {
   -webkit-box-shadow: inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
-  box-shadow: inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
+          box-shadow: inset -4px -4px 6px 0 rgba(255, 255, 255, 0.2), inset 4px 4px 6px 0 rgba(0, 0, 0, 0.4);
 }
 
 .Shop-btn-1:hover p, .Shop-btn-2:hover p {
   -webkit-animation-name: a;
-  animation-name: a;
+          animation-name: a;
   -webkit-animation-duration: 1.5s;
-  animation-duration: 1.5s;
+          animation-duration: 1.5s;
   -webkit-animation-timing-function: ease-in-out;
-  animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
 }
 
 @-webkit-keyframes a {
   0% {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   70% {
     -webkit-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
   }
   100% {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 @keyframes a {
   0% {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
   70% {
     -webkit-transform: scale(1.05, 1.05);
-    transform: scale(1.05, 1.05);
+            transform: scale(1.05, 1.05);
   }
   100% {
     -webkit-transform: scale(1, 1);
-    transform: scale(1, 1);
+            transform: scale(1, 1);
   }
 }
 
 .Shop-item-text {
   font-size: 1.8rem;
-  font-family: 'Bodoni Moda',serif;
-  color: #e98d2b;
+  font-family: 'Bodoni Moda', serif;
+  color: #E98D2B;
   margin: 30px;
-  border-bottom: 1px solid #e98d2b;
+  border-bottom: 1px solid #E98D2B;
 }
 
 .Shop-text-box {
@@ -819,11 +824,11 @@ figcaption.hover-mask {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
 }
 
-.price, .quantity {
-  font-family: 'Bodoni Moda',serif;
+.quantity, .price {
+  font-family: 'Bodoni Moda', serif;
   margin: 10px;
   color: #fff;
   font-size: 1.2rem;
@@ -847,9 +852,9 @@ figcaption.hover-mask {
   margin: 0 auto;
   max-width: 70%;
   font-size: 80px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
   margin-top: 200px;
 }
 
@@ -857,9 +862,9 @@ figcaption.hover-mask {
   margin: 0 auto;
   max-width: 70%;
   font-size: 30px;
-  color: #e9b851;
+  color: #E9B851;
   text-align: center;
-  font-family: 'Bodoni Moda',serif;
+  font-family: 'Bodoni Moda', serif;
 }
 
 .block-Store {
@@ -895,13 +900,13 @@ li {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 dt {
-  font-family: 'Bodoni Moda',serif;
-  font-weight: 700;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
   font-size: 1.4rem;
 }
 
@@ -910,7 +915,7 @@ dd {
   font-size: 1.2rem;
 }
 
-.Store_address, .Store_business-hours, .Store_tell {
+.Store_address, .Store_tell, .Store_business-hours {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -919,10 +924,10 @@ dd {
 
 .Store-name {
   color: #fff;
-  border-left: 3px solid #e9b851;
+  border-left: 3px solid #E9B851;
   padding-left: 10px;
-  font-family: 'Bodoni Moda',serif;
-  font-weight: 700;
+  font-family: 'Bodoni Moda', serif;
+  font-weight: bold;
   font-size: 1.5rem;
 }
 
@@ -951,7 +956,7 @@ dd {
   .header-bk {
     position: absolute;
     top: 0;
-    background-color: #b23227;
+    background-color: #B23227;
     height: 20%;
     width: 100%;
   }
@@ -960,15 +965,15 @@ dd {
     margin-top: 60px;
   }
   .btn {
-    background-color: #fff;
-    color: #edcc36;
+    background-color: white;
+    color: #EDCC36;
     border: none;
     padding: 10px 20px;
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
     border-radius: 10%;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
     margin-top: 50px;
   }
   #nav {
@@ -979,12 +984,13 @@ dd {
     float: left;
     height: 85px;
     line-height: 100px;
+    padding-left: -10px;
     padding-right: 15px;
     margin-left: -3px;
   }
   #nav li a {
     text-decoration: none;
-    color: #edcc36;
+    color: #EDCC36;
   }
   .swiper-slide img {
     max-width: 80%;
@@ -996,16 +1002,16 @@ dd {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-prev:after, .swiper-button-next:after {
     display: none;
   }
   .swiper-button-next, .swiper-button-prev {
@@ -1022,9 +1028,10 @@ dd {
     right: auto;
   }
   :root {
-    --swiper-theme-color:#B23227;
+    --swiper-theme-color: #B23227;
   }
-  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
+  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask
+, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
     font-size: 1.8rem;
   }
   .item-container {
@@ -1035,9 +1042,9 @@ dd {
     display: grid;
     gap: 10px;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 300px 300px;
-    grid-template-rows: 300px 300px;
+        grid-template-rows: 300px 300px;
   }
   .Shop-Item {
     padding-left: 30px;
@@ -1048,15 +1055,15 @@ dd {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Shop-item-text {
     font-size: 1.4rem;
-    font-family: 'Bodoni Moda',serif;
-    color: #e98d2b;
+    font-family: 'Bodoni Moda', serif;
+    color: #E98D2B;
     margin: 30px;
-    border-bottom: 1px solid #e98d2b;
+    border-bottom: 1px solid #E98D2B;
   }
   .block-Store {
     clear: both;
@@ -1093,7 +1100,7 @@ dd {
   .header-bk {
     position: absolute;
     top: 0;
-    background-color: #b23227;
+    background-color: #B23227;
     height: 10%;
     width: 100%;
   }
@@ -1104,15 +1111,15 @@ dd {
     margin-top: 40px;
   }
   .btn {
-    background-color: #fff;
-    color: #edcc36;
+    background-color: white;
+    color: #EDCC36;
     border: none;
     padding: 10px 20px;
     font-size: 1.3rem;
     font-weight: 600;
     cursor: pointer;
     border-radius: 10%;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
     margin-top: 25px;
     margin-right: 20px;
   }
@@ -1130,13 +1137,13 @@ dd {
     float: left;
     height: 85px;
     line-height: 100px;
-    padding-left: 0;
-    padding-right: 0;
-    margin-left: 0;
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-left: 0px;
   }
   #nav li a {
     text-decoration: none;
-    color: #edcc36;
+    color: #EDCC36;
   }
   .swiper-container {
     position: relative;
@@ -1154,16 +1161,16 @@ dd {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-prev:after, .swiper-button-next:after {
     display: none;
   }
   .swiper-button-next, .swiper-button-prev {
@@ -1180,7 +1187,7 @@ dd {
     right: auto;
   }
   :root {
-    --swiper-theme-color:#B23227;
+    --swiper-theme-color: #B23227;
   }
   .notice {
     padding-top: 10px;
@@ -1190,12 +1197,13 @@ dd {
   .notice ul li {
     padding: 15px;
     font-size: 20px;
-    font-family: '游明朝','Yu Mincho';
+    font-family: '游明朝' ,'Yu Mincho';
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
+  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask
+, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
     font-size: 1.5rem;
   }
   .item-container {
@@ -1206,16 +1214,16 @@ dd {
     display: grid;
     gap: 5px;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 250px 250px;
-    grid-template-rows: 250px 250px;
+        grid-template-rows: 250px 250px;
   }
   .news-box {
-    background-color: #393a3c;
+    background-color: #393A3C;
     height: 1000px;
     max-width: 1100px;
     margin: 10px auto;
-    border: 1px solid #e9b851;
+    border: 1px solid #E9B851;
     margin-top: 200px;
   }
   .Shop-Item {
@@ -1227,16 +1235,16 @@ dd {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Shop-item-text {
     font-size: 1.3rem;
-    font-family: 'Bodoni Moda',serif;
-    color: #e98d2b;
+    font-family: 'Bodoni Moda', serif;
+    color: #E98D2B;
     padding: 30px;
     margin: 30px;
-    border-bottom: 1px solid #e98d2b;
+    border-bottom: 1px solid #E98D2B;
   }
   .block-Store {
     clear: both;
@@ -1282,22 +1290,23 @@ dd {
     text-decoration: none;
     -webkit-transition: .5s;
     transition: .5s;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
   }
   .gnav-sub__menu__item {
     list-style: none;
   }
   .gnav-sub__menu__item a {
     color: #fffffe;
-    font-size: .7em;
+    font-size: 0.7em;
     font-weight: 700;
     padding: 50px;
     text-decoration: none;
     -webkit-transition: .5s;
     transition: .5s;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
   }
-  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
+  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask
+, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
     font-size: 1.3rem;
   }
   figcaption.hover-mask {
@@ -1319,7 +1328,7 @@ dd {
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
-    font-family: '游明朝','Yu Mincho';
+    font-family: '游明朝' ,'Yu Mincho';
   }
   .swiper-container {
     position: relative;
@@ -1346,7 +1355,7 @@ dd {
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-prev:after, .swiper-button-next:after {
     display: none;
   }
   .swiper-button-next, .swiper-button-prev {
@@ -1363,11 +1372,11 @@ dd {
     right: auto;
   }
   :root {
-    --swiper-theme-color:#B23227;
+    --swiper-theme-color: #B23227;
   }
   .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
     background: #ddd;
-    border-radius: 0;
+    border-radius: 0px;
     border: 1.5px solid #ccc;
     z-index: 1;
     cursor: pointer;
@@ -1378,18 +1387,18 @@ dd {
     margin-top: 100px;
     display: -ms-grid;
     display: grid;
-    gap: 0;
+    gap: 0px;
     -ms-grid-columns: 1fr 1fr 1fr;
-    grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
     -ms-grid-rows: 230px 230px;
-    grid-template-rows: 230px 230px;
+        grid-template-rows: 230px 230px;
   }
   .news-box {
-    background-color: #393a3c;
+    background-color: #393A3C;
     height: 700px;
     max-width: 1100px;
     margin: 10px auto;
-    border: 1px solid #e9b851;
+    border: 1px solid #E9B851;
     margin-top: 200px;
   }
   .Shop-Item {
@@ -1401,15 +1410,15 @@ dd {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Shop-item-text {
     font-size: 1.3rem;
-    font-family: 'Bodoni Moda',serif;
-    color: #e98d2b;
+    font-family: 'Bodoni Moda', serif;
+    color: #E98D2B;
     margin: 30px;
-    border-bottom: 1px solid #e98d2b;
+    border-bottom: 1px solid #E98D2B;
   }
   .block-Store {
     clear: both;
@@ -1448,16 +1457,25 @@ dd {
   .header-bk {
     display: none;
   }
-  .Shop-box .news-title p, .Store-title p, .item-title p, .news-box .news-title p {
+  .menu {
+    height: 20px;
+    position: fixed;
+    right: 75px;
+    top: 50px;
+    width: 70px;
+    z-index: 1300;
+    cursor: pointer;
+  }
+  .Store-title p, .Shop-box .news-title p, .news-box .news-title p, .item-title p {
     font-size: 60px;
   }
-  .Shop-box .news-subtitle p, .Store-box .Store-subtitle p, .item-subtitle, .news-box .news-subtitle {
+  .news-box .news-subtitle, .item-subtitle, .Shop-box .news-subtitle p, .Store-box .Store-subtitle p {
     margin: 0 auto;
     max-width: 70%;
     font-size: 20px;
-    color: #e9b851;
+    color: #E9B851;
     text-align: center;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
   }
   .swiper-container {
     position: relative;
@@ -1475,25 +1493,26 @@ dd {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .swiper-slide img {
     width: 100%;
   }
-  .swiper-button-next:after, .swiper-button-prev:after {
+  .swiper-button-prev:after, .swiper-button-next:after {
     display: none;
   }
   .swiper-button-next, .swiper-button-prev {
     display: none;
   }
   :root {
-    --swiper-theme-color:#B23227;
+    --swiper-theme-color: #B23227;
   }
-  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
+  .item-1:hover .hover-mask, .item-2:hover .hover-mask, .item-3:hover .hover-mask
+, .item-4:hover .hover-mask, .item-5:hover .hover-mask, .item-6:hover .hover-mask {
     padding-top: 30px;
     font-size: 1.8rem;
   }
@@ -1516,7 +1535,7 @@ dd {
     align-items: center;
     text-align: center;
     padding-bottom: 20px;
-    font-family: '游明朝','Yu Mincho';
+    font-family: '游明朝' ,'Yu Mincho';
   }
   .Shop-Item-Btn {
     margin-top: auto;
@@ -1528,31 +1547,31 @@ dd {
     width: 170px;
     height: 50px;
     border-radius: 5px;
-    font-family: 'Bodoni Moda',serif;
+    font-family: 'Bodoni Moda', serif;
     font-weight: 500;
-    background: 0 0;
+    background: transparent;
     cursor: pointer;
-    -webkit-transition: all .3s ease;
-    transition: all .3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     position: relative;
     display: inline-block;
-    -webkit-box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: inset 2px 2px 2px 0 rgba(255, 255, 255, 0.5), 7px 7px 20px 0 rgba(0, 0, 0, 0.1), 4px 4px 5px 0 rgba(0, 0, 0, 0.1);
-    outline: 0;
+    -webkit-box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+            box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5), 7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
     font-size: 15px;
     color: #090909;
   }
   .Shop-btn-1, .Shop-btn-2 {
     background: #fafafa;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #fafafa), to(#8b8b8b));
-    background: linear-gradient(0deg, #fafafa 0, #8b8b8b 100%);
+    background: -webkit-gradient(linear, left bottom, left top, from(#fafafa), to(#8b8b8b));
+    background: linear-gradient(0deg, #fafafa 0%, #8b8b8b 100%);
     border: none;
     -webkit-transition: 1s;
     transition: 1s;
   }
   .item-1, .item-2, .item-3, .item-4, .item-5, .item-6 {
     background: #ddd;
-    border-radius: 0;
+    border-radius: 0px;
     border: 1.5px solid #ccc;
     z-index: 1;
     cursor: pointer;
@@ -1563,24 +1582,24 @@ dd {
     margin-top: 100px;
     display: -ms-grid;
     display: grid;
-    gap: 0;
+    gap: 0px;
     -ms-grid-columns: 1fr;
-    grid-template-columns: 1fr;
+        grid-template-columns: 1fr;
     -ms-grid-rows: 300px 300px 300px 300px 300px 300px;
-    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+        grid-template-rows: 300px 300px 300px 300px 300px 300px;
   }
   .fix li, .fix1 li, .fix2 li, .fix3 li, .fix4 li {
     float: left;
     list-style: none;
-    margin-right: 0;
+    margin-right: 0px;
     margin: 10px;
   }
   .news-box {
-    background-color: #393a3c;
+    background-color: #393A3C;
     height: 1000px;
     max-width: 100%;
     margin: 10px auto;
-    border: 1px solid #e9b851;
+    border: 1px solid #E9B851;
     margin-top: 200px;
   }
   .Shop-Item {
@@ -1592,34 +1611,34 @@ dd {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .Shop-item-text {
     font-size: 1.1rem;
-    font-family: 'Bodoni Moda',serif;
-    color: #e98d2b;
+    font-family: 'Bodoni Moda', serif;
+    color: #E98D2B;
     margin: 5px;
-    border-bottom: 1px solid #e98d2b;
+    border-bottom: 1px solid #E98D2B;
   }
   .Shop-text-box {
     max-width: 85%;
     margin: 0 auto;
     display: inline;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+        justify-content: space-around;
   }
-  .price, .quantity {
-    font-family: 'Bodoni Moda',serif;
+  .quantity, .price {
+    font-family: 'Bodoni Moda', serif;
     float: left;
     margin: 5px;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.0rem;
     text-align: center;
   }
   .block-Store {
     clear: both;
-    padding-left: 0;
+    padding-left: 0px;
     max-width: 100%;
     margin: 0 auto;
   }
